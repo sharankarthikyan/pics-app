@@ -39,6 +39,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="ui container" style={{ marginTop: "10px" }}>
+        <h1 style={{ display: "flex", justifyContent: "center" }}>
+          Search to get a Randomly generated 10 pictures 🤩
+        </h1>
         <SearchBar onSubmit={this.onSearchSubmit} />
         <ImageList images={this.state.images} />
       </div>
